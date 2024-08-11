@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital - Taverna Grill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cardápio Digital - Taverna Grill</h1>
+
+        <!-- Apresentação do Cardápio: Categorias -->
+        <section class="menu-section">
+            <h2>Hambúrgueres</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQs_f_4jrwnd1EU_PDMwSSu0qGQxyg1-atfw&s" alt="Hambúrguer Clássico" class="menu-image">
+                    <label>
+                        <input type="checkbox" class="item-checkbox" data-name="Hambúrguer Clássico" data-price="15.99">
+                        <span class="item-name">Hambúrguer Clássico</span> 
+                        <span class="item-description">Pão, carne, queijo, alface, tomate</span>
+                        <span class="item-price">R$ 15,99</span>
+                    </label>
+                    <input type="number" class="item-quantity" value="1" min="1" disabled>
+                </div>
+                <div class="menu-item">
+                    <img src="https://s2.glbimg.com/jJirZVMNK5ZsZ9UDLKQBqPu3iXk=/620x455/e.glbimg.com/og/ed/f/original/2020/10/20/hamburgueria_bob_beef_-_dia_das_criancas_-_foto_pfz_studio__norma_lima.jpg" alt="Cheeseburger" class="menu-image">
+                    <label>
+                        <input type="checkbox" class="item-checkbox" data-name="Cheeseburger" data-price="18.99">
+                        <span class="item-name">Cheeseburger</span> <br>
+                        <span class="item-description">Pão, carne, queijo, alface, tomate, bacon</span> <br>
+                        <span class="item-price">R$ 18,99</span>
+                    </label>
+                    <input type="number" class="item-quantity" value="1" min="1" disabled>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Salgados</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://st.depositphotos.com/1859627/3956/i/450/depositphotos_39568525-stock-photo-coxinha-de-galinha.jpg" alt="Coxinha" class="menu-image">
+                    <label>
+                        <input type="checkbox" class="item-checkbox" data-name="Coxinha" data-price="5.99">
+                        <span class="item-name">Coxinha</span> <br>
+                        <span class="item-description">Frango empanado e frito</span> <br>
+                        <span class="item-price">R$ 5,99</span>
+                    </label>
+                    <input type="number" class="item-quantity" value="1" min="1" disabled>
+                </div>
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4q78wGssR7pFQUQ_fvs7F0bfH06Zm2hMqrBRLa3mIzvNfiluxV1wcTyoNXVDgwIVlqsc&usqp=CAU" alt="Empada" class="menu-image">
+                    <label>
+                        <input type="checkbox" class="item-checkbox" data-name="Empada" data-price="4.99">
+                        <span class="item-name">Empada</span> <br>
+                        <span class="item-description">Massa recheada de frango ou palmito</span> <br>
+                        <span class="item-price">R$ 4,99</span>
+                    </label>
+                    <input type="number" class="item-quantity" value="1" min="1" disabled>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Bebidas</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://s2.glbimg.com/GUda5oj9xkd_yQNyn36mDn9XJmo=/620x455/e.glbimg.com/og/ed/f/original/2018/08/17/beber-refrigerante-todos-os-dias-esta-te-matando.jpg" alt="Refrigerante" class="menu-image">
+                    <label>
+                        <input type="checkbox" class="item-checkbox" data-name="Refrigerante" data-price="7.99">
+                        <span class="item-name">Refrigerante</span>
+                        <span class="item-description">350ml</span> <br>
+                        <span class="item-price">R$ 7,99</span>
+                    </label>
+                    <input type="number" class="item-quantity" value="1" min="1" disabled>
+                </div>
+                <div class="menu-item">
+                    <img src="https://s2-oglobo.glbimg.com/D1mhYfFyuNhCJ-YXkcUucDWsgbc=/0x0:5760x3840/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/W/c/MTI3DXTZyxtIB0wv4mCA/fresh-orange-juice-glass-dark-background.jpg" alt="Suco Natural" class="menu-image">
+                    <label>
+                        <input type="checkbox" class="item-checkbox" data-name="Suco Natural" data-price="10.99">
+                        <span class="item-name">Suco Natural</span>
+                        <span class="item-description">400ml</span> <br>
+                        <span class="item-price">R$ 10,99</span>
+                    </label>
+                    <input type="number" class="item-quantity" value="1" min="1" disabled>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gerenciamento do Pedido: Carrinho -->
+        <section class="cart">
+            <h2>Carrinho de Compras</h2>
+            <div class="cart-items">
+                <!-- Itens adicionados aparecerão aqui -->
+            </div>
+            <div class="cart-total">
+                Total: R$ 0,00
+            </div>
+            <div class="checkout">
+                <button id="add-more">Adicionar Mais Itens</button>
+                <button id="checkout">Finalizar Pedido</button>
+            </div>
+        </section>
+
+        <!-- Finalização do Pedido -->
+        <section class="order-summary">
+            <h2>Finalizar Pedido</h2>
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required>
+
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" placeholder="Digite seu endereço" required>
+
+            <label for="payment">Forma de Pagamento:</label>
+<div class="payment-options">
+    <label>
+        <input type="radio" id="credit" name="payment" value="credit" required>
+        Cartão de Crédito
+    </label>
+    <label>
+        <input type="radio" id="debit" name="payment" value="debit">
+        Cartão de Débito
+    </label>
+    <label>
+        <input type="radio" id="pix" name="payment" value="pix">
+        Pix
+    </label>
+</div>
+
+            <div class="checkout">
+                <button id="confirm">Confirmar Pedido</button>
+                <button id="cancel">Cancelar</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
